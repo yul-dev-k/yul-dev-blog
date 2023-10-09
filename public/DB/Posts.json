@@ -1,0 +1,28 @@
+{
+  "Posts": [
+    {
+      "title": "test1",
+      "content": "test1-content",
+      "pic": "https://images.indianexpress.com/2022/01/arcane-show1200.jpg",
+      "tags": ["tag1"],
+      "series": "series1",
+      "createdAt": "2023-10-09T23:39:11.087Z"
+    },
+    {
+      "title": "test2",
+      "content": "test2-content",
+      "pic": null,
+      "tags": ["tag2"],
+      "series": null,
+      "createdAt": "2023-10-10T23:39:11.087Z"
+    },
+    {
+      "title": "test3",
+      "content": "test3-content",
+      "pic": null,
+      "tags": ["tag3"],
+      "series": "series2",
+      "createdAt": "2023-10-11T23:39:11.087Z"
+    }
+  ]
+}
