@@ -1,8 +1,12 @@
 import "./Header.scss";
 import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 import { MdSunny } from "react-icons/md";
+import { BiSolidMoon } from "react-icons/bi";
 
 export default function Header() {
+  const [DarkModeToogle, setDarkModeToogle] = useState(false);
+
   return (
     <header>
       <h1>
@@ -18,7 +22,18 @@ export default function Header() {
         <li>
           <NavLink to="About">About</NavLink>
         </li>
-        <MdSunny />
+        <button
+          onClick={() => {
+            setDarkModeToogle(!DarkModeToogle);
+          }}
+        >
+          {DarkModeToogle ? (
+            <BiSolidMoon fill="#ffbb00" size={"1.5em"} />
+          ) : (
+            <MdSunny fill="#ffbb00" size={"1.5em"} />
+          )}
+        </button>
+
         <input placeholder="Search Keyword..." />
       </ul>
     </header>
