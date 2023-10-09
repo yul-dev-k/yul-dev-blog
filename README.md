@@ -23,9 +23,7 @@ React를 통해 개인 기술 블로그를 제작 중이다.
 
 ### Environment
 
-<img src="https://img.shields.io/badge/visual studio code-444444?style=for-the-badge&logo=visualstudiocode">
-<img src="https://img.shields.io/badge/git-444444?style=for-the-badge&logo=git">
-<img src="https://img.shields.io/badge/git hub-444444?style=for-the-badge&logo=github">
+<img src="https://img.shields.io/badge/visual studio code-444444?style=for-the-badge&logo=visualstudiocode"> <img src="https://img.shields.io/badge/git-444444?style=for-the-badge&logo=git"> <img src="https://img.shields.io/badge/git hub-444444?style=for-the-badge&logo=github">
 
 ### Config
 
@@ -35,10 +33,7 @@ React를 통해 개인 기술 블로그를 제작 중이다.
 
 **MERN stack**
 
-<img src="https://img.shields.io/badge/mongo db-444444?style=for-the-badge&logo=mongodb">
-<img src="https://img.shields.io/badge/express-444444?style=for-the-badge&logo=express">
-<img src="https://img.shields.io/badge/react-444444?style=for-the-badge&logo=react">
-<img src="https://img.shields.io/badge/node js-444444?style=for-the-badge&logo=nodedotjs">
+<img src="https://img.shields.io/badge/mongo db-444444?style=for-the-badge&logo=mongodb"> <img src="https://img.shields.io/badge/express-444444?style=for-the-badge&logo=express"> <img src="https://img.shields.io/badge/react-444444?style=for-the-badge&logo=react"> <img src="https://img.shields.io/badge/node js-444444?style=for-the-badge&logo=nodedotjs">
 
 ## 👀 화면 구성
 
