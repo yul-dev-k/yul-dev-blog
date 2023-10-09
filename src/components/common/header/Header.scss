@@ -41,6 +41,10 @@ header {
       border: none;
       font-weight: 200;
       font-size: 1.2rem;
+
+      &::placeholder {
+        color: #999;
+      }
     }
   }
 }
