@@ -18,7 +18,11 @@ header {
     font-size: 1.7rem;
     align-items: center;
     li {
-      color : #4E87DD;
+      color : #999;
+
+      a.on {
+        color : #4E87DD;
+      }
     }
   
     button {

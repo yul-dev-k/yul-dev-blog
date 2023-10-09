@@ -14,13 +14,19 @@ export default function Header() {
       </h1>
       <ul>
         <li>
-          <NavLink to="Posts">Posts</NavLink>
+          <NavLink to="Posts" activeClassName={"on"}>
+            Posts
+          </NavLink>
         </li>
         <li>
-          <NavLink to="Review">Review</NavLink>
+          <NavLink to="Review" activeClassName={"on"}>
+            Review
+          </NavLink>
         </li>
         <li>
-          <NavLink to="About">About</NavLink>
+          <NavLink to="About" activeClassName={"on"}>
+            About
+          </NavLink>
         </li>
         <button
           onClick={() => {
