@@ -1,5 +1,5 @@
 import "./Serises.scss";
 
 export default function Serises() {
-  return <side className="serises">Serises</side>;
+  return <div className="serises">Serises</div>;
 }

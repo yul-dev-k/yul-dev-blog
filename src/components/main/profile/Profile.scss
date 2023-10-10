@@ -1,6 +1,5 @@
 aside {
   width: 100%;
-  background-color: aquamarine;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,6 +28,11 @@ aside {
     ul {
       display: flex;
       justify-content: space-between;
+
+      a {
+        font-size: 1.5rem;
+        color: #4E87DD;
+      }
     }
   }
   
