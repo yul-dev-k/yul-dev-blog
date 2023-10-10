@@ -1,5 +1,5 @@
 import "./TagList.scss";
 
 export default function TagList() {
-  return <div>TagList</div>;
+  return <nav className="tagList">TagList</nav>;
 }

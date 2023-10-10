@@ -1,4 +1,17 @@
 figure {
   width: 100%;
   height: 100vh;
+  padding: 12rem;
+  gap: 3rem;
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.7fr 1.3fr;
+  grid-template-areas:
+    "aside main nav"
+    "side  main nav";
+  .profile { grid-area: aside; }
+  .serises { grid-area: side; }
+  .main-content { grid-area: main; }
+  .tagList { grid-area: nav; }
 }
+

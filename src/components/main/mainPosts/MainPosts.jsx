@@ -1,5 +1,5 @@
 import "./MainPosts.scss";
 
 export default function MainPosts() {
-  return <div>MainPosts</div>;
+  return <section className={"main-content"}>MainPosts</section>;
 }
