@@ -1,5 +1,6 @@
+import Layout from "../../common/layout/Layout";
 import "./About.scss";
 
 export default function About() {
-  return <div>About</div>;
+  return <Layout title={"About"}>about children</Layout>;
 }
