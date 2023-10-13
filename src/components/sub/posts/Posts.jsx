@@ -1,6 +1,7 @@
 import Layout from "../../common/layout/Layout";
 import "./Posts.scss";
 import postList from "../../../posts.json";
+import ReactMarkdown from "react-markdown";
 
 function Post({ post }) {
   return (
@@ -8,7 +9,7 @@ function Post({ post }) {
       <h1>{post.title}</h1>
       <span>{post.date}</span>
       <div>{post.tags}</div>
-      <div>{post.content}</div>
+      <ReactMarkdown>{post.content}</ReactMarkdown>
     </>
   );
 }
