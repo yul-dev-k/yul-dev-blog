@@ -13,10 +13,10 @@ function Post({ post }) {
           <span>{post.date}</span>
         </div>
         <div className="right">
-          <div>{post.tags}</div>
-          <div>{post.summery}</div>
+          <div className="summery">{post.summery}</div>
+          <span className="tags">{post.tags}</span>
+          <div className="bar"></div>
         </div>
-        <div className="bar"></div>
       </article>
     </Link>
   );
