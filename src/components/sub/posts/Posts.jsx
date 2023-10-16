@@ -1,39 +1,23 @@
 import Layout from "../../common/layout/Layout";
 import "./Posts.scss";
 import postList from "../../../posts.json";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { Link } from "react-router-dom";
 
 function Post({ post }) {
-  const markdown = post.content;
-
+  console.log(post);
   return (
-    <div className="md-content">
-      <h1>{post.title}</h1>
-      <span>{post.date}</span>
-      <div>{post.tags}</div>
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-        children={markdown}
-        components={{
-          code({ node, inline, className, children, ...props }) {
-            const match = /language-(\w+)/.exec(className || "");
-            return !inline && match ? (
-              <SyntaxHighlighter
-                children={String(children).replace(/\n$/, "")}
-                language={match[1]}
-                {...props}
-              />
-            ) : (
-              <code className={className} {...props}>
-                {children}
-              </code>
-            );
-          },
-        }}
-      ></ReactMarkdown>
-    </div>
+    <Link to={`/detail/${post.id}`}>
+      <article className="pre-con">
+        <div className="left">
+          <h1>{post.title}</h1>
+          <span>{post.date}</span>
+        </div>
+        <div className="right">
+          <div>{post.tags}</div>
+        </div>
+        <div className="bar"></div>
+      </article>
+    </Link>
   );
 }
 
@@ -41,7 +25,9 @@ export default function Posts() {
   return (
     <Layout title={"Posts"}>
       {postList.map((post) => (
-        <Post post={post} key={post.id} />
+        <>
+          <Post post={post} key={post.id} />
+        </>
       ))}
     </Layout>
   );

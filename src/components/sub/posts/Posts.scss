@@ -1,25 +1,14 @@
-@import '../../../styles/Variable.scss';
-
-.md-content {
-  font-size: 1.2rem;
+.pre-con {
+  width: 100%;
+  margin: 2rem 0;
+  font-size: 1.3rem;
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
   }
-  pre {
-    background: #F8F8F8;
-    code > *{
-      margin-left: 0.2rem;
-      
-    }
-    
+  .bar {
+    width: 70%;
+    border: 1px solid #000;
+    opacity: 0.5;
   }
-  
-  blockquote {
-    color: #666;
-    margin: 0;
-    padding-left: 3em;
-    border-left: 0.5em $main-color solid;
-    background-color: white;
-    padding: 1.5rem;
-}
 }
