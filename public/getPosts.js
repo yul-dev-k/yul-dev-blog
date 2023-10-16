@@ -48,6 +48,7 @@ const getPosts = () => {
           date: metadata.date ? metadata.date : "No date given",
           tags: metadata.tags ? metadata.tags : "No tags given",
           serises: metadata.serises ? metadata.serises : "No serises given",
+          summery: metadata.summery ? metadata.summery : "No summery given",
           content: content ? content : "No content given",
         };
         postList.push(post);

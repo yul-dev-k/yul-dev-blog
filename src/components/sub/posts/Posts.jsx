@@ -14,6 +14,7 @@ function Post({ post }) {
         </div>
         <div className="right">
           <div>{post.tags}</div>
+          <div>{post.summery}</div>
         </div>
         <div className="bar"></div>
       </article>
