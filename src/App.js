@@ -6,7 +6,7 @@ import About from "./components/sub/about/About";
 import "./styles/Global.scss";
 import Visual from "./components/main/visual/Visual";
 import Posts from "./components/sub/posts/Posts";
-import Detail from "./components/sub/posts/Detail";
+import Post from "./components/sub/posts/Post";
 
 function App() {
   return (
@@ -14,8 +14,9 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/" element={<Visual />} />
-        <Route path="/posts" element={<Posts />}>
-          <Route path=":id" element={<Detail />} />
+        <Route path="/posts/*">
+          <Route index element={<Posts />} />
+          <Route path=":id" element={<Post />} />
         </Route>
         <Route path="/review" element={<Review />} />
         <Route path="/about" element={<About />} />

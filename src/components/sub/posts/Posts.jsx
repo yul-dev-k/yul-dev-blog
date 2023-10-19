@@ -3,10 +3,9 @@ import "./Posts.scss";
 import postList from "../../../posts.json";
 import { Link } from "react-router-dom";
 
-function Post({ post }) {
-  console.log(post);
+function PostList({ post }) {
   return (
-    <Link to={`/detail/${post.id}`}>
+    <Link to={`${post.id}`}>
       <article className="pre-con">
         <div className="left">
           <h1>{post.title}</h1>
@@ -27,7 +26,7 @@ export default function Posts() {
     <Layout title={"Posts"}>
       {postList.map((post) => (
         <>
-          <Post post={post} key={post.id} />
+          <PostList post={post} key={post.id} />
         </>
       ))}
     </Layout>

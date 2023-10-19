@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { useParams } from "react-router-dom";
-import "./Detail.scss";
+import "./Post.scss";
 
 function Detail() {
   const { id } = useParams();
