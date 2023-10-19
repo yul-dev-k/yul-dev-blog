@@ -4,6 +4,7 @@ export default function Img({ className }) {
       src="https://event.leagueoflegends.co.kr/chuseok2020/img/obj_roll_poro_01.png"
       alt=""
       className={className}
+      style={{ objectFit: "cover" }}
     />
   );
 }
