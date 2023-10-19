@@ -15,7 +15,7 @@ React를 통해 개인 기술 블로그를 제작 중 입니다.
   - [👀 화면 구성](#--------)
   - [🧑‍💻 주요 기능](#-----------)
   - [📚 개발 하면서](#---------)
-    - [Git Convention](#git-convention)
+    - [Commit Message Convention](#commit-message-convention)
 
 </details>
 
@@ -41,7 +41,7 @@ React를 통해 개인 기술 블로그를 제작 중 입니다.
 
 ## 📚 개발 하면서
 
-### Git Convention
+### Commit Message Convention
 
 > **참고** <br> https://velog.io/@archivvonjang/Git-Commit-Message-Convention
 
