@@ -5,14 +5,12 @@ import {
   FaEnvelope,
 } from "react-icons/fa6";
 import "./Profile.scss";
+import Img from "../../common/profile/Img";
 
 export default function Profile() {
   return (
     <aside className="profile">
-      <img
-        src="https://event.leagueoflegends.co.kr/chuseok2020/img/obj_roll_poro_01.png"
-        alt=""
-      />
+      <Img />
       <div>
         <h1>Yul</h1>
         <span>frontEnd</span>
