@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/common/header/Header";
 import Footer from "./components/common/footer/Footer";
 import Review from "./components/sub/review/Review";
@@ -12,12 +12,14 @@ function App() {
   return (
     <>
       <Header />
-
-      <Route exact path="/" component={Visual} />
-      <Route path="/posts" component={Posts} />
-      <Route path="/review" component={Review} />
-      <Route path="/about" component={About} />
-      <Route path="/detail/:id" component={Detail} />
+      <Routes>
+        <Route exact path="/" element={<Visual />} />
+        <Route path="/posts" element={<Posts />}>
+          <Route path=":id" element={<Detail />} />
+        </Route>
+        <Route path="/review" element={<Review />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
 
       <Footer />
     </>
