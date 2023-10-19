@@ -11,7 +11,7 @@ function Detail() {
   const currentId = postList
     .map((post) => post)
     .map((detail) => detail)
-    .find((detail) => detail.id == id);
+    .find((detail) => detail.id === Number(id));
 
   const currentContent = currentId.content;
 
