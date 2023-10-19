@@ -25,9 +25,7 @@ export default function Posts() {
   return (
     <Layout title={"Posts"}>
       {postList.map((post) => (
-        <>
-          <PostList post={post} key={post.id} />
-        </>
+        <PostList post={post} key={post.id} />
       ))}
     </Layout>
   );
