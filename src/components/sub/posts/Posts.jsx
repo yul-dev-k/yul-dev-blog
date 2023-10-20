@@ -12,7 +12,7 @@ function PostList({ post }) {
           <span>{post.date}</span>
         </div>
         <div className="right">
-          <div className="summery">{post.summery}</div>
+          <div className="summary">{post.summary}</div>
           <span className="tags">{post.tags}</span>
           <div className="bar"></div>
         </div>
