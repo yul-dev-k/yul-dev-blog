@@ -50,29 +50,34 @@ main {
     }
     
   }
-  .stackList {
-    width: 100%;
+  .techStack {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-  
-    .stack {
-      width:fit-content;
-      padding: 0.5rem;
+    flex-direction: column;
+    gap: 2rem;
+    .stackList {
+      width: 100%;
       display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: rgba(35, 36, 36, 0.904);
-      color: #ddd;
-      font-size: 1.2rem;
-      font-weight: 300;
-      border-radius: 0.3rem;
-  
-      svg {
-        width: 1.7rem;
-        height: 1.7rem;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    
+      .stack {
+        width:fit-content;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(35, 36, 36, 0.904);
+        color: #ddd;
+        font-size: 1.2rem;
+        font-weight: 300;
+        border-radius: 0.3rem;
+    
+        svg {
+          width: 1.7rem;
+          height: 1.7rem;
+        }
+        
       }
-      
     }
   }
   .qualificationList {

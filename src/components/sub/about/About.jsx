@@ -89,13 +89,16 @@ export default function About() {
           </p>
         </section>
         <div className={styles.bar}></div>
-        <section className={styles.stackList}>
-          {techStack.map((data) => (
-            <div key={data.name} className={styles.stack}>
-              {data.icon}
-              <span>{data.name}</span>
-            </div>
-          ))}
+        <section className={styles.techStack}>
+          <h2>TechStack</h2>
+          <div className={styles.stackList}>
+            {techStack.map((data) => (
+              <div key={data.name} className={styles.stack}>
+                {data.icon}
+                <span>{data.name}</span>
+              </div>
+            ))}
+          </div>
         </section>
         <div className={styles.bar}></div>
         <section className={styles.qualificationList}>
