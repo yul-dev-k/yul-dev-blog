@@ -1,10 +1,20 @@
-export default function Img({ className }) {
+import React from "react";
+
+const Img = React.forwardRef((props, ref) => {
+  const { style, ...otherProps } = props;
+  const imageStyle = {
+    ...style,
+    objectFit: "cover",
+  };
   return (
     <img
       src="https://event.leagueoflegends.co.kr/chuseok2020/img/obj_roll_poro_01.png"
       alt=""
-      className={className}
-      style={{ objectFit: "cover" }}
+      ref={ref}
+      style={imageStyle}
+      {...otherProps}
     />
   );
-}
+});
+
+export default Img;

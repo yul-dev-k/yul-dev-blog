@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import {
   FaLinkedin,
   FaSquareXTwitter,
@@ -8,9 +9,16 @@ import "./Profile.scss";
 import Img from "../../common/profile/Img";
 
 export default function Profile() {
+  const imgRef = useRef(null);
+  const [Width, setWidth] = useState(0);
+
+  useEffect(() => {
+    setWidth(imgRef.current.offsetWidth);
+  }, [imgRef]);
   return (
     <aside className="profile">
-      <Img />
+      <Img ref={imgRef} style={{ height: `${Width}px` }} />
+
       <div>
         <h1>Yul</h1>
         <span>frontEnd</span>
