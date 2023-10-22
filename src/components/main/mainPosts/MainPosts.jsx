@@ -23,7 +23,7 @@ function PostList({ post }) {
 export default function MainPosts() {
   return (
     <main className={styles.mainPost}>
-      {postList.map((post) => (
+      {[...postList].reverse().map((post) => (
         <PostList post={post} key={post.id} />
       ))}
     </main>

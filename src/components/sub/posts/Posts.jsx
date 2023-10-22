@@ -24,7 +24,7 @@ function PostList({ post }) {
 export default function Posts() {
   return (
     <Layout title={"Posts"}>
-      {postList.map((post) => (
+      {[...postList].reverse().map((post) => (
         <PostList post={post} key={post.id} />
       ))}
     </Layout>
