@@ -10,14 +10,14 @@ import Img from "../../common/profile/Img";
 
 export default function Profile() {
   const imgRef = useRef(null);
-  const [Width, setWidth] = useState(0);
+  // const [Width, setWidth] = useState(0);
 
-  useEffect(() => {
-    setWidth(imgRef.current.offsetWidth);
-  }, [imgRef]);
+  // useEffect(() => {
+  //   setWidth(imgRef.current.offsetWidth);
+  // }, [imgRef]);
   return (
     <aside className="profile">
-      <Img ref={imgRef} style={{ height: `${Width}px` }} />
+      <Img />
 
       <div>
         <h1>Yul</h1>
