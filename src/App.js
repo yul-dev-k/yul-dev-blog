@@ -7,6 +7,7 @@ import "./styles/Global.scss";
 import Visual from "./components/main/visual/Visual";
 import Posts from "./components/sub/posts/Posts";
 import Post from "./components/sub/posts/Post";
+import Tags from "./components/sub/tags/Tags";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         </Route>
         <Route path="/review" element={<Review />} />
         <Route path="/about" element={<About />} />
+        <Route path="/tags" element={<Tags />} />
       </Routes>
 
       <Footer />
