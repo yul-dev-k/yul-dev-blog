@@ -1,11 +1,11 @@
-import Layout from "../../common/layout/Layout";
-import Img from "../../common/profile/Img";
 import { TiLocation } from "react-icons/ti";
 import { PiTerminalWindowFill } from "react-icons/pi";
 import { RiJavascriptFill, RiReactjsFill, RiHtml5Fill } from "react-icons/ri";
 import { FaPython, FaCss3Alt } from "react-icons/fa";
 import { SiMysql, SiGraphql, SiMongodb } from "react-icons/si";
 import { AiFillPhone } from "react-icons/ai";
+import Layout from "../../common/layout/Layout";
+import Img from "../../common/profile/Img";
 import styles from "./About.module.scss";
 
 export default function About() {

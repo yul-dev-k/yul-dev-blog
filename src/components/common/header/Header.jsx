@@ -1,8 +1,8 @@
-import "./Header.scss";
-import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import { MdSunny } from "react-icons/md";
 import { BiSolidMoon } from "react-icons/bi";
+import "./Header.scss";
 
 export default function Header() {
   const [DarkModeToogle, setDarkModeToogle] = useState(false);

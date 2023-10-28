@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 
-const dirPath = path.join(__dirname, "../src/components/sub/posts/content");
+const dirPath = path.join(__dirname, "../src/assets/content");
 let postList = [];
 
 const getPosts = async () => {

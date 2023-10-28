@@ -1,20 +1,13 @@
-import { useEffect, useRef, useState } from "react";
 import {
   FaLinkedin,
   FaSquareXTwitter,
   FaGithub,
   FaEnvelope,
 } from "react-icons/fa6";
-import "./Profile.scss";
 import Img from "../../common/profile/Img";
+import "./Profile.scss";
 
 export default function Profile() {
-  const imgRef = useRef(null);
-  // const [Width, setWidth] = useState(0);
-
-  // useEffect(() => {
-  //   setWidth(imgRef.current.offsetWidth);
-  // }, [imgRef]);
   return (
     <aside className="profile">
       <Img />

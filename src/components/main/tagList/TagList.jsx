@@ -1,6 +1,6 @@
-import "./TagList.scss";
-import postList from "../../../posts.json";
 import { Link } from "react-router-dom";
+import postList from "../../../posts.json";
+import "./TagList.scss";
 
 export default function TagList() {
   const distinctTags = postList
@@ -14,8 +14,8 @@ export default function TagList() {
       </Link>
       <ul>
         {distinctTags.map((tag, idx) => (
-          <Link to={`/tags/${tag}`}>
-            <li key={idx}>{tag}</li>
+          <Link to={`/tags/${tag}`} key={idx}>
+            <li>{tag}</li>
           </Link>
         ))}
       </ul>
