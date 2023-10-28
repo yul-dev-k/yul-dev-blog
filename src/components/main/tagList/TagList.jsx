@@ -1,6 +1,6 @@
-import "./TagList.scss";
-import postList from "../../../posts.json";
 import { Link } from "react-router-dom";
+import postList from "../../../posts.json";
+import "./TagList.scss";
 
 export default function TagList() {
   const distinctTags = postList

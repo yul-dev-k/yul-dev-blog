@@ -1,5 +1,5 @@
-import "./Serises.scss";
 import postList from "../../../posts.json";
+import "./Serises.scss";
 
 export default function Serises() {
   const distinctSerises = postList

@@ -8,9 +8,16 @@ figure {
   grid-template-areas:
     "aside main nav"
     "side  main nav";
-  .profile { grid-area: aside; }
-  .serises { grid-area: side; }
-  .main-content { grid-area: main; }
-  .tagList { grid-area: nav; }
+  .profile {
+    grid-area: aside;
+  }
+  .serises {
+    grid-area: side;
+  }
+  .main-content {
+    grid-area: main;
+  }
+  .tagList {
+    grid-area: nav;
+  }
 }
-

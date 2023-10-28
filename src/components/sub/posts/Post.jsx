@@ -1,9 +1,9 @@
-import Layout from "../../common/layout/Layout";
-import postList from "../../../posts.json";
+import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { useParams } from "react-router-dom";
+import Layout from "../../common/layout/Layout";
+import postList from "../../../posts.json";
 import "./Post.scss";
 
 function Detail() {

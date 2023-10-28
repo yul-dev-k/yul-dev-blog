@@ -1,8 +1,6 @@
 import Layout from "../../common/layout/Layout";
-import "./Posts.scss";
-import postList from "../../../posts.json";
-import { Link, NavLink } from "react-router-dom";
 import PostList from "../../common/postList/PostList";
+import "./Posts.scss";
 
 export default function Posts() {
   return (

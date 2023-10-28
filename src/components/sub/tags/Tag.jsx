@@ -1,7 +1,7 @@
+import React from "react";
 import { useParams, Link } from "react-router-dom";
 import Layout from "../../common/layout/Layout";
 import postList from "../../../posts.json";
-import React from "react";
 
 export default function Tag() {
   const { tag } = useParams();

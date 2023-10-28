@@ -1,17 +1,15 @@
-@import '../../../styles/Variable.scss';
+@import "../../../styles/Variable.scss";
 
 .tagList {
   width: 100%;
-  // text-align: right;
   color: $main-color;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   border-right: 2.5px solid rgb(163 189 229 / 14%);
   padding-right: 2rem;
-  
+
   &:hover {
-    
     border-right: 2.5px solid rgb(163 189 229 / 50%);
   }
 
@@ -28,7 +26,6 @@
     width: max-content;
 
     li {
-      
       font-size: 1.3rem;
       opacity: 0.6;
 
