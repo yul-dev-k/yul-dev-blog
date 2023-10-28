@@ -1,4 +1,4 @@
-import MainPosts from "../mainPosts/MainPosts";
+import PostList from "../../common/postList/PostList";
 import Profile from "../profile/Profile";
 import Serises from "../serises/Serises";
 import TagList from "../tagList/TagList";
@@ -9,7 +9,7 @@ export default function Visual() {
     <figure>
       <Profile />
       <Serises />
-      <MainPosts />
+      <PostList />
       <TagList />
     </figure>
   );
