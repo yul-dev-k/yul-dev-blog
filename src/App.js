@@ -8,6 +8,7 @@ import Visual from "./components/main/visual/Visual";
 import Posts from "./components/sub/posts/Posts";
 import Post from "./components/sub/posts/Post";
 import Tags from "./components/sub/tags/Tags";
+import Tag from "./components/sub/tags/Tag";
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
         </Route>
         <Route path="/review" element={<Review />} />
         <Route path="/about" element={<About />} />
-        <Route path="/tags" element={<Tags />} />
+        <Route path="/tags">
+          <Route index element={<Tags />} />
+          <Route path=":tag" element={<Tag />} />
+        </Route>
       </Routes>
 
       <Footer />
