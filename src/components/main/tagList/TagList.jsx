@@ -14,8 +14,8 @@ export default function TagList() {
       </Link>
       <ul>
         {distinctTags.map((tag, idx) => (
-          <Link to={`/tags/${tag}`}>
-            <li key={idx}>{tag}</li>
+          <Link to={`/tags/${tag}`} key={idx}>
+            <li>{tag}</li>
           </Link>
         ))}
       </ul>
